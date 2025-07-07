@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imam Hussain Memorial - Commemorating Muharram and Ashura</title>
+    <meta name="description" content="A digital memorial honoring Imam Hussain (as) and the significance of Muharram. Learn about the historical events of Karbala and the enduring values of justice and courage.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Imam Hussain Memorial - Commemorating Muharram and Ashura">
+    <meta property="og:description" content="A respectful digital memorial to Imam Hussain (as) and the events of Karbala">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕌</text></svg>">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i data-lucide="church" class="nav-icon"></i>
+                <h1>Imam Hussain (as)</h1>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <button onclick="scrollToSection('#home')" class="nav-link">Home</button>
+                <button onclick="scrollToSection('#about')" class="nav-link">About</button>
+                <button onclick="scrollToSection('#karbala')" class="nav-link">Karbala</button>
+                <button onclick="scrollToSection('#timeline')" class="nav-link">Timeline</button>
+
+                <a href="creator.html" class="nav-link">Creator</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i data-lucide="menu" id="menu-icon"></i>
+                <i data-lucide="x" id="close-icon" style="display: none;"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu">
+            <button onclick="scrollToSection('#home')" class="mobile-nav-link">Home</button>
+            <button onclick="scrollToSection('#about')" class="mobile-nav-link">About</button>
+            <button onclick="scrollToSection('#karbala')" class="mobile-nav-link">Karbala</button>
+            <button onclick="scrollToSection('#timeline')" class="mobile-nav-link">Timeline</button>
+
+            <a href="creator.html" class="mobile-nav-link">Creator</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-image"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text-container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Imam Hussain (as)</h1>
+                    <h2 class="hero-subtitle">The Grandson of Prophet Muhammad (PBUH)</h2>
+                    <p class="hero-quote">"Death with dignity is better than a life of humiliation" - Imam Hussain (as)</p>
+                </div>
+                
+                <div class="hero-buttons">
+                    <button onclick="scrollToSection('#about')" class="btn btn-primary">
+                        Learn About Muharram
+                    </button>
+                    <button onclick="scrollToSection('#timeline')" class="btn btn-outline">
+                        View Timeline
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Imam Hussain (as)</h2>
+                <div class="section-divider"></div>
+                <p>The beloved grandson of Prophet Muhammad (PBUH), a beacon of justice and truth</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>The Legacy of Courage</h3>
+                    <p>Imam Hussain (as), the third Imam of the Shia Muslims and the grandson of Prophet Muhammad (PBUH), stands as one of the most revered figures in Islamic history. His unwavering commitment to justice, truth, and moral principles has inspired millions across centuries.</p>
+                    
+                    <p>Born in Medina, Imam Hussain was raised in the household of the Prophet, surrounded by divine guidance and prophetic wisdom. His character was molded by the teachings of his grandfather and the love of his father, Imam Ali (as), and mother, Fatimah (as).</p>
+                    
+                    <h3>The Man of Principles</h3>
+                    <p>Throughout his life, Imam Hussain demonstrated exceptional moral courage, choosing righteousness over worldly power. His refusal to pledge allegiance to tyranny and his stand against oppression at Karbala exemplify the highest principles of faith and humanity.</p>
+                    
+                    <p>His message transcends religious boundaries, speaking to all humanity about the importance of standing up for justice, protecting the oppressed, and never compromising on fundamental human values.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Karbala Section -->
+    <section id="karbala" class="karbala">
+        <div class="container">
+            <div class="section-header">
+                <h2>The Battle of Karbala</h2>
+                <div class="section-divider"></div>
+                <p>The defining moment that changed the course of Islamic history</p>
+            </div>
+
+            <div class="karbala-content">
+                <div class="karbala-story">
+                    <h3>The Journey to Karbala</h3>
+                    <p>In 680 CE (61 AH), Imam Hussain embarked on a journey that would become one of the most significant events in Islamic history. Refusing to pledge allegiance to the Umayyad Caliph Yazid, whose rule he considered unjust and contrary to Islamic principles, Imam Hussain set out from Medina with his family and companions.</p>
+                    
+                    <h3>The Siege and Sacrifice</h3>
+                    <p>At the plains of Karbala in Iraq, Imam Hussain and his small band of 72 companions faced an army of thousands. Despite being vastly outnumbered and surrounded, they refused to surrender their principles. The tragic events of the 10th of Muharram (Ashura) saw the martyrdom of Imam Hussain and his companions, but their sacrifice illuminated the path of truth and justice for future generations.</p>
+                    
+                    <h3>The Message of Karbala</h3>
+                    <p>The tragedy of Karbala was not merely a political conflict, but a struggle between truth and falsehood, justice and oppression. Imam Hussain's sacrifice teaches us that some principles are worth dying for, and that standing up against tyranny is a moral obligation, regardless of the consequences.</p>
+                    
+                    <p>His final words and actions continue to inspire people of all backgrounds to choose righteousness over convenience, truth over power, and justice over personal gain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Historical Timeline</h2>
+                <div class="section-divider"></div>
+                <p>Key events in the life of Imam Hussain (as) and the tragedy of Karbala</p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">626 CE</div>
+                    <div class="timeline-content">
+                        <h3>Birth of Imam Hussain</h3>
+                        <p>Born in Medina as the younger son of Imam Ali and Fatimah, grandson of Prophet Muhammad (PBUH)</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">632 CE</div>
+                    <div class="timeline-content">
+                        <h3>Death of Prophet Muhammad</h3>
+                        <p>The Prophet passes away, leaving behind his teachings and the Quran as guidance for humanity</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">661 CE</div>
+                    <div class="timeline-content">
+                        <h3>Martyrdom of Imam Ali</h3>
+                        <p>Imam Ali, the father of Hussain and fourth Caliph, is martyred in Kufa</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">670 CE</div>
+                    <div class="timeline-content">
+                        <h3>Death of Imam Hassan</h3>
+                        <p>Imam Hassan, the elder brother, passes away under suspicious circumstances</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">680 CE</div>
+                    <div class="timeline-content">
+                        <h3>Journey to Karbala</h3>
+                        <p>Imam Hussain leaves Medina and travels toward Kufa, ultimately reaching Karbala</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">10 Muharram 61 AH</div>
+                    <div class="timeline-content">
+                        <h3>Day of Ashura</h3>
+                        <p>The tragic battle of Karbala occurs, resulting in the martyrdom of Imam Hussain and his companions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quotes Section -->
+    <section id="quotes" class="quotes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Words of Wisdom</h2>
+                <div class="section-divider"></div>
+                <p>Inspiring quotes from Imam Hussain (as) that continue to guide humanity</p>
+            </div>
+
+            <div class="quotes-grid">
+                <div class="quote-card">
+                    <blockquote>"Death with dignity is better than a life of humiliation"</blockquote>
+                    <cite>- Imam Hussain (as)</cite>
+                </div>
+
+                <div class="quote-card">
+                    <blockquote>"I only desire to spread good values and prevent evil"</blockquote>
+                    <cite>- Imam Hussain (as)</cite>
+                </div>
+
+                <div class="quote-card">
+                    <blockquote>"A person who does not have any sorrow is not from amongst us"</blockquote>
+                    <cite>- Imam Hussain (as)</cite>
+                </div>
+
+                <div class="quote-card">
+                    <blockquote>"The most generous person is one who gives to those from whom he has no hope of return"</blockquote>
+                    <cite>- Imam Hussain (as)</cite>
+                </div>
+
+                <div class="quote-card">
+                    <blockquote>"Never be a slave to others when Allah has created you free"</blockquote>
+                    <cite>- Imam Hussain (as)</cite>
+                </div>
+
+                <div class="quote-card">
+                    <blockquote>"Learn the Quran and teach it to people"</blockquote>
+                    <cite>- Imam Hussain (as)</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-header">
+                    <h3>In Memory of Imam Hussain (as)</h3>
+                    <p>May we continue to learn from his sacrifice and embody his values of justice, compassion, and truth.</p>
+                </div>
+                
+                <div class="social-links">
+                    <button class="social-btn">
+                        <a class="social-btn" href="https://linkedin.com/in/wafi-syed" target="_blank"><i data-lucide="linkedin"></i></a>
+                    </button>
+                    <button class="social-btn">
+                        <a class="social-btn" href="https://github.com/WafflesNZXT" target="_blank"><i data-lucide="github"></i></a>
+                    </button>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Imam Hussain Memorial. Created with respect and reverence.</p>
+                    <p class="creator-credit">Developed by <span class="creator-name">Wafi Syed</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <h4 id="toast-title"></h4>
+            <p id="toast-description"></p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

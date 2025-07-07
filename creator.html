@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Creator - Wafi Syed | Imam Hussain Memorial</title>
+    <meta name="description" content="Learn about Wafi Syed, the creator of the Imam Hussain Memorial website, his motivation, and connect with him on social media.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕌</text></svg>">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Creator page specific styles -->
+    <style>
+        .creator-page {
+            min-height: 100vh;
+            background-color: var(--muharram-black);
+            color: var(--muharram-text);
+        }
+        
+        .creator-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 50;
+            background-color: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--muharram-gray);
+        }
+        
+        .creator-nav .nav-container {
+            padding: 1rem;
+        }
+        
+        .back-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: none;
+            border: none;
+            color: var(--muharram-gold);
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            color: var(--muharram-warm-gold);
+        }
+        
+        .creator-content {
+            padding-top: 5rem;
+            padding-bottom: 4rem;
+        }
+        
+        .creator-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .creator-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--muharram-gold);
+            margin-bottom: 1.5rem;
+        }
+        
+        .creator-card {
+            background-color: var(--muharram-charcoal);
+            border: 1px solid var(--muharram-gray);
+            border-radius: 0.5rem;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            max-width: 64rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .creator-info {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .creator-name {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--muharram-gold);
+            margin-bottom: 1rem;
+        }
+        
+        .creator-role {
+            font-size: 1.25rem;
+            color: var(--muharram-light-text);
+            margin-bottom: 1.5rem;
+        }
+        
+        .creator-about {
+            margin-bottom: 2rem;
+        }
+        
+        .creator-about h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--muharram-gold);
+            margin-bottom: 1rem;
+        }
+        
+        .creator-about p {
+            color: var(--muharram-light-text);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        
+        .creator-social {
+            border-top: 1px solid var(--muharram-gray);
+            padding-top: 2rem;
+        }
+        
+        .creator-social h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--muharram-gold);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .social-button {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background-color: transparent;
+            color: var(--muharram-gold);
+            border: 1px solid var(--muharram-gold);
+            border-radius: 0.375rem;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .social-button:hover {
+            background-color: var(--muharram-gold);
+            color: var(--muharram-black);
+        }
+        
+        .creator-quote {
+            text-align: center;
+            max-width: 48rem;
+            margin: 0 auto;
+        }
+        
+        .creator-quote blockquote {
+            font-size: 1.125rem;
+            color: var(--muharram-light-text);
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .creator-quote .quote-attribution {
+            color: var(--muharram-gold);
+            margin-top: 1rem;
+        }
+        
+        .creator-quote .quote-author {
+            color: var(--muharram-light-gray);
+            margin-top: 0.5rem;
+            font-size: 0.875rem;
+        }
+        
+        @media (max-width: 768px) {
+            .creator-title {
+                font-size: 2rem;
+            }
+            
+            .creator-name {
+                font-size: 1.75rem;
+            }
+            
+            .creator-card {
+                padding: 2rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            
+            .social-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .social-button {
+                width: 100%;
+                max-width: 200px;
+                justify-content: center;
+            }
+        }
+    </style>
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="creator-page">
+    <!-- Navigation -->
+    <nav class="creator-nav">
+        <div class="nav-container">
+            <a href="index.html" class="back-btn">
+                <i data-lucide="arrow-left"></i>
+                Back to Memorial
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="creator-content">
+        <div class="container">
+            <!-- Header -->
+            <div class="creator-header">
+                <h1 class="creator-title">About the Creator</h1>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Creator Info Card -->
+            <div class="creator-card">
+                <div class="creator-info">
+                    <h2 class="creator-name">Wafi Syed</h2>
+                    <p class="creator-role">Developer & Designer</p>
+                </div>
+
+                <!-- About Section -->
+                <div class="creator-about">
+                    <h3>Why I Created This Memorial</h3>
+                    <p>
+                        This commemorative website was created with deep respect and reverence for Imam Hussain (as) 
+                        and the profound significance of his sacrifice at Karbala. As a way to honor his memory and 
+                        share the timeless lessons of courage, justice, and standing against oppression.
+                    </p>
+                    <p>
+                        Through this digital memorial, I hope to provide an accessible platform for people to learn 
+                        about the historical events of Muharram and reflect on the enduring values that Imam Hussain (as) 
+                        embodied - values that remain relevant and inspiring across all communities and generations.
+                    </p>
+                    <p>
+                        May this serve as a small tribute to his legacy and a source of education and reflection 
+                        for all who visit.
+                    </p>
+                </div>
+
+                <!-- Social Links -->
+                <div class="creator-social">
+                    <h3>Connect With Me</h3>
+                    <div class="social-buttons">
+                        <a href="https://linkedin.com/in/wafi-syed" target="_blank" rel="noopener noreferrer" class="social-button">
+                            <i data-lucide="linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/WafflesNZXT" target="_blank" rel="noopener noreferrer" class="social-button">
+                            <i data-lucide="github"></i>
+                            GitHub
+                        </a>
+                        <button onclick="handleEmailClick()" class="social-button">
+                            <i data-lucide="mail"></i>
+                            Email
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Quote -->
+            <div class="creator-quote">
+                <blockquote>
+                    "إِنِّي لَمْ أَخْرُجْ أَشِرًا وَلَا بَطِرًا وَلَا مُفْسِدًا وَلَا ظَالِمًا وَإِنَّمَا خَرَجْتُ لِطَلَبِ الْإِصْلَاحِ فِي أُمَّةِ جَدِّي"
+                </blockquote>
+                <p class="quote-attribution">
+                    "I have not come out for the purpose of exuberance, arrogance, corruption or oppression, 
+                    but I have come out to seek reform in the community of my grandfather."
+                </p>
+                <p class="quote-author">
+                    - Imam Hussain (as)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <h4 id="toast-title"></h4>
+            <p id="toast-description"></p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Initialize Lucide icons
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+        });
+
+        // Email functionality with toast notification
+        async function handleEmailClick() {
+            const email = "wafi.syed5@gmail.com";
+            const subject = encodeURIComponent("Regarding Imam Hussain Memorial Website");
+            const mailtoLink = `mailto:${email}?subject=${subject}`;
+            
+            // Try to open email client
+            window.location.href = mailtoLink;
+            
+            // Copy email to clipboard and show notification
+            try {
+                await navigator.clipboard.writeText(email);
+                showToast("Email copied to clipboard", `${email} has been copied to your clipboard`);
+            } catch (error) {
+                console.log("Email: " + email);
+                showToast("Email address", `Please copy this email: ${email}`);
+            }
+        }
+
+        // Toast notification functionality
+        function showToast(title, description) {
+            const toast = document.getElementById('toast');
+            const toastTitle = document.getElementById('toast-title');
+            const toastDescription = document.getElementById('toast-description');
+            
+            toastTitle.textContent = title;
+            toastDescription.textContent = description;
+            
+            toast.classList.add('show');
+            
+            // Auto hide after 3 seconds
+            setTimeout(() => {
+                hideToast();
+            }, 3000);
+        }
+
+        function hideToast() {
+            const toast = document.getElementById('toast');
+            toast.classList.remove('show');
+        }
+
+        // Close toast on ESC key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                hideToast();
+            }
+        });
+    </script>
+</body>
+</html>
